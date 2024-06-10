@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --toastify-toast-width: 350px;
+}
+
+.Toastify__toast-body {
+  padding: 0 !important;
+}
+
+/* @TODO: STYLE BODY SCROLLBAR DIFFERENTLY*/
+
+/* INTERNAL SCROLLBARS */
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar:horizontal {
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparentize(#ccc, 0.7);
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: transparentize(#ccc, 0.5);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+@layer components {
+  .link {
+    @apply text-primary hover:underline;
+  }
+
+  .input {
+    @apply block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 disabled:text-gray-300 disabled:cursor-not-allowed;
+  }
+}

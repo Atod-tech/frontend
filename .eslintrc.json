@@ -1,0 +1,8 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react/display-name": "off", // Disable the display-name rule
+    "import/no-anonymous-default-export": "off", // Disable the no-anonymous-default-export rule
+    "react/no-unescaped-entities": "off" // Disable the no-unescaped-entities rules
+  }
+}
